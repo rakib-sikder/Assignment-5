@@ -10,24 +10,19 @@
 </head>
 <body >
   <section class="fixed lg:px-[140px] w-[100%] lg:py-[25px] backdrop-blur-lg  z-10">
-
-
-
     <div class="  flex justify-between items-start lg:gap-14  ">
       <div >
-        
-        <button class="btn text-xl bg-[#B4F461] text-black lg:px-7">Blog</button>
-         
+        <button class="btn lg:text-xl text-base bg-[#B4F461] text-black lg:px-7">Blog</button>
       </div>
       <div class=" p-0 m-0 lg:flex">
-        <ul class=" px-1 lg:gap-36 gap-2 flex flex-col items-center">
+        <ul class=" px-1 lg:gap-36 gap-4 flex flex-col items-center">
           <li class="flex flex-row items-center gap-4 p-0 m-0 text-xl">
-            <img class="h-14 p-0" src="./image/logo.png" alt="">
+            <img class="lg:h-14 h-9 p-0" src="./image/logo.png" alt="">
             <p>Donate Bangladesh</p>
           </li>
-          <ul class="flex gap-4">
-            <li><button id="donation" class=" bg-[#B4F461] btn  px-7">Donation</button></li>
-            <li><button id="history" class="btn  px-7">History</button></li>
+          <ul class="flex gap-6">
+            <li><button id="donation" class=" bg-[#B4F461] btn  lg:px-7">Donation</button></li>
+            <li><button id="history" class="btn  lg:px-7">History</button></li>
           </ul>
         </ul>
       </div>
@@ -40,11 +35,11 @@
 
 
 
-  <section class="donationNeed pt-80">
+  <section class="donationNeed lg:pt-80 pt-20">
     <div class="lg:px-[140px]  bg-base-200 mt-6 ">
       <div class="hero-content flex-col lg:flex-row">
-        <img class="w-1/2 h-full" src="./image/feni.png" />
-        <div class="gap-5 flex flex-col">
+        <img class="lg:w-1/2 w-auto h-full" src="./image/feni.png" />
+        <div class="lg:gap-5 flex flex-col">
           <div class="flex gap-1 items-center text-[#111111B3]">
             <img src="./image/coin.png" alt="">
             <p id="totaldonate">8570 </p><p> BDT</p>
@@ -53,9 +48,9 @@
           <p class="py-6 text-[#111111B3]">
             The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
           </p>
-          <input type="number" placeholder="Write Donation Amount" id="ammountinput" class="input w-full" />
+          <input type="number" placeholder="Write Donation Amount" id="ammountinput" class="input w-full mb-2" />
           
-            <!-- Open the modal using ID.showModal() method -->
+            
           <button id="donatebtn" class="btn btn-primary w-full bg-[#B4F461] border-none text-black text-xl" >Donate Now</button>
           <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
               <div class="modal-box flex flex-col  items-center">
@@ -65,7 +60,7 @@
                    <p class="text-xl font-bold">successfully</p>
                   <div class="modal-action">
                   <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
+        
                     <button class="font-bold text-sm">Close Confirmation</button>
       </form>
     </div>
@@ -77,8 +72,8 @@
     </div>
     <div class="lg:px-[140px]  bg-base-200 ">
       <div class="hero-content flex-col lg:flex-row">
-        <img class="w-1/2 h-full" src="./image/noakhali.png" />
-        <div class="gap-5 flex flex-col">
+        <img class="lg:w-1/2 w-auto h-full" src="./image/noakhali.png" />
+        <div class="lg:gap-5 flex flex-col">
           <div class="flex gap-1 items-center text-[#111111B3]">
             <img src="./image/coin.png" alt="">
             <p id="nouakhaliDonate">1570 </p><p> BDT</p>
@@ -87,15 +82,15 @@
           <p class="py-6 text-[#111111B3]">
             The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
           </p>
-          <input type="number" placeholder="Write Donation Amount"id="nuakhaliinput" class="input w-full" />
+          <input type="number" placeholder="Write Donation Amount"id="nuakhaliinput" class="input w-full  mb-2" />
           <button id="nuakhali" class="btn btn-primary w-full bg-[#B4F461] border-none text-black text-xl">Donate Now</button>
         </div>
       </div>
     </div>
     <div class="lg:px-[140px]  bg-base-200 ">
       <div class="hero-content flex-col lg:flex-row">
-        <img class="w-1/2 h-full" src="./image/quota-protest.png" />
-        <div class="gap-5 flex flex-col">
+        <img class="lg:w-1/2 w-auto h-full" src="./image/quota-protest.png" />
+        <div class="lg:gap-5 flex flex-col">
           <div class="flex gap-1 items-center text-[#111111B3]">
             <img src="./image/coin.png" alt="">
             <p id="quotaTotalDonate">5970 </p><p> BDT</p>
@@ -104,7 +99,7 @@
           <p class="py-6 text-[#111111B3]">
             The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
           </p>
-          <input type="number" placeholder="Write Donation Amount" id="qutainput" class="input w-full" />
+          <input type="number" placeholder="Write Donation Amount" id="qutainput" class="input w-full  mb-2" />
           <button id="qutabtn" class="btn btn-primary w-full bg-[#B4F461] border-none text-black text-xl">Donate Now</button>
         </div>
       </div>
@@ -112,8 +107,7 @@
   </section>
 
 
-  <section id="historyDetails" class="lg:px-[140px]  pt-80">
-    
+  <section id="historyDetails" class="lg:px-[140px] hidden lg:pt-80 pt-20">
   </section>
   
   <script src="./script.js"></script>

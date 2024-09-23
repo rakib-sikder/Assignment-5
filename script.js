@@ -3,8 +3,6 @@ let mainBalance= document.getElementById('mainBalance')
 const currentDate = new Date();
         
 
-
-
 document.getElementById("donatebtn").addEventListener('click', function(){
     let totaldonate= document.getElementById('totaldonate').innerText;
     let input = document.getElementById('ammountinput').value;
@@ -33,7 +31,6 @@ document.getElementById("donatebtn").addEventListener('click', function(){
 })
 
 
-
 document.getElementById("nuakhali").addEventListener('click', function(){
     let totaldonate= document.getElementById('nouakhaliDonate').innerText;
     let input = document.getElementById('nuakhaliinput').value;
@@ -58,9 +55,6 @@ document.getElementById("nuakhali").addEventListener('click', function(){
     }
      document.getElementById('nuakhaliinput').value=''
 })
-
-
-
 
 
 document.getElementById("qutabtn").addEventListener('click', function(){
@@ -89,24 +83,22 @@ document.getElementById("qutabtn").addEventListener('click', function(){
 })
 
 
-
-
-
-
 document.getElementById('history').addEventListener('click', function(){
     
     document.querySelector('#history').classList.add('bg-[#B4F461]');
     document.querySelector('#donation').classList.remove('bg-[#B4F461]');
     
     document.querySelector('.donationNeed').classList.add('hidden');
-    document.querySelector('.historyDetails').classList.remove('hidden');
+    document.querySelector('#historyDetails').classList.remove('hidden');
 })
+
+
 document.getElementById('donation').addEventListener('click', function(){
     document.querySelector('.donationNeed').classList.remove('hidden');
     
     document.querySelector('#history').classList.remove('bg-[#B4F461]');
     document.querySelector('#donation').classList.add('bg-[#B4F461]');
-    document.querySelector('.historyDetails').classList.add('hidden');
+    document.querySelector('#historyDetails').classList.add('hidden');
 })
 
 
