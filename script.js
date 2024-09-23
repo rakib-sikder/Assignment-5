@@ -93,7 +93,21 @@ document.getElementById("qutabtn").addEventListener('click', function(){
 
 
 
-
+document.getElementById('history').addEventListener('click', function(){
+    
+    document.querySelector('#history').classList.add('bg-[#B4F461]');
+    document.querySelector('#donation').classList.remove('bg-[#B4F461]');
+    
+    document.querySelector('.donationNeed').classList.add('hidden');
+    document.querySelector('.historyDetails').classList.remove('hidden');
+})
+document.getElementById('donation').addEventListener('click', function(){
+    document.querySelector('.donationNeed').classList.remove('hidden');
+    
+    document.querySelector('#history').classList.remove('bg-[#B4F461]');
+    document.querySelector('#donation').classList.add('bg-[#B4F461]');
+    document.querySelector('.historyDetails').classList.add('hidden');
+})
 
 
 
