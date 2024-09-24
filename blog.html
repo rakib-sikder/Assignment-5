@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/caf2e2e181.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="fixed lg:px-[140px] w-[100%] lg:py-[25px] backdrop-blur-lg  z-10">
+        <div class="  flex justify-between items-start lg:gap-14  ">
+          <div >
+            <a href="./index.html"><button class="btn lg:text-xl text-base bg-[#B4F461] text-black lg:px-7">Home</button></a>
+          </div>
+          <div class=" p-0 m-0 lg:flex">
+            <ul class=" px-1 lg:gap-28 gap-4 flex flex-col items-center">
+              <li class="flex flex-row items-center gap-4 p-0 m-0 text-xl">
+                <img class="lg:h-14 h-9 p-0" src="./image/logo.png" alt="">
+                <p>Donate Bangladesh</p>
+              </li>
+            </ul>
+          </div>
+          <div class="flex gap-1  items-center text-[#111111B3]">
+            <img src="./image/coin.png" alt="">
+            <p id="mainBalance">5500</p><p> BDT</p>
+          </div>
+        </div>
+      </section>
+      <section class="lg:pt-28 lg:px-[140px] gap-10 pt-20">
+        <h3 class="font-extrabold text-2xl mb-14">Importent FAQ <i class="fa-solid fa-question font-bold text-3xl rotate-[35deg]"></i></h3>
+            <div class="collapse collapse-arrow bg-base-200 ">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The DOM stands for the Document Object Model. It’s like the backstage pass for web pages. When a web page loads in your browser, the DOM is quietly constructed behind the scenes. Imagine it as a tree of interconnected objects that represent the structure and content of the page.each HTML element (like headings, paragraphs, images, buttons) becomes an object in this tree. The root of the tree is the entire HTML document, and from there, branches extend to individual elements. JavaScript can then interact with these objects, making your web page dynamic.
+                It can change the content of HTML elements. Want to update that button text? Done!
+                It can tweak HTML attributes. Change an image source or adjust a link’s target.
+                It can play with CSS styles. Turn that bland paragraph into a stylish masterpiece.
+                It can add or remove HTML elements. Say hello to dynamically generated content!
+                It can even react to HTML events. Clicks, hovers, and more—JavaScript’s got it covered.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an Element from the DOM?</div>
+            <div class="collapse-content">
+              <p>If an element has a unique id attribute (and it should be unique, like a snowflake), you can grab it using document.getElementById('yourElementId'). It’s like calling out someone by their full name at a party—no confusion!
+                Example:const myElement = document.getElementById('myUniqueButton');
+                When you’ve got a bunch of elements with the same class (like a herd of sheep), you can round 'em up using document.getElementsByClassName('yourClassName').
+Note: This returns a collection (like a sheep pen), so you’ll need to loop through it or pick a specific index.
+Example:const buttons = document.getElementsByClassName('myButtons');
+
+
+
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">what is event delegation in the contex of the DOM, why is useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a pattern that leverages the concept of event bubbling. When an event (like a click or keypress) occurs on an element, it doesn’t just affect that specific element; it also “bubbles up” through its parent elements in the DOM hierarchy.
+                Instead of attaching event listeners directly to individual child elements, event delegation allows you to handle events at a higher level—typically on a parent or ancestor element. This parent element then becomes responsible for handling events triggered by its descendants By default, when the button receives an event (e.g., a click), that event bubbles up through the DOM tree. So, the <span> and <div> elements will also receive the event.
+                    With event delegation, instead of attaching a click event listener directly to the button, you attach it to the parent</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an elements attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>Accessing Elements: To manipulate an element’s attributes and styles, you first need to grab hold of it. You can do this using various methods, but the most common one is getElementById Replace 'myElementId' with the actual ID of the element you want to work with.
+
+                2. Attributes: Attributes are those little bits of information hanging out in your HTML tags. You can access and modify them like so:
+                
+                Get an attribute value:
+                JavaScript
+                
+                const value = myElement.getAttribute('data-something');
+                AI-generated code. Review and use carefully. More info on FAQ.
+                Set an attribute value:
+                JavaScript
+                
+                myElement.setAttribute('data-something', 'new value');
+                AI-generated code. Review and use carefully. More info on FAQ.
+                Remove an attribute:
+                JavaScript
+                
+                myElement.removeAttribute('data-something');
+                AI-generated code. Review and use carefully. More info on FAQ.
+                3. Styles: Styles control how an element looks. You can manipulate them directly using the style property:
+                
+                Get a style value:
+                JavaScript
+                
+                const bgColor = myElement.style.backgroundColor;
+                AI-generated code. Review and use carefully. More info on FAQ.
+                Set a style value:
+                JavaScript
+                
+                myElement.style.color = 'blue';
+                AI-generated code. Review and use carefully. More info on FAQ.
+                Remember that style properties are camel-cased in JavaScript (e.g., backgroundColor, not background-color).
+                
+                4. Class Names: Classes are super handy for applying predefined styles. You can add, remove, or toggle classes:
+                
+                Add a class:
+                JavaScript
+                
+                myElement.classList.add('my-class');
+                AI-generated code. Review and use carefully. More info on FAQ.
+                Remove a class:
+                JavaScript
+                
+                myElement.classList.remove('old-class');
+                AI-generated code. Review and use carefully. More info on FAQ.
+                Toggle a class (add if absent, remove if present):
+                JavaScript
+                
+                myElement.classList.toggle('active');
+                AI-generated code. Review and use carefully. More info on FAQ.
+                5. Creating New Elements: Sometimes you need to create elements dynamically. Use document.createElement</p>
+            </div>
+          </div>
+      </section>
+</body>
+</html>

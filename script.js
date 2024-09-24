@@ -95,7 +95,6 @@ document.getElementById('history').addEventListener('click', function(){
 
 document.getElementById('donation').addEventListener('click', function(){
     document.querySelector('.donationNeed').classList.remove('hidden');
-    
     document.querySelector('#history').classList.remove('bg-[#B4F461]');
     document.querySelector('#donation').classList.add('bg-[#B4F461]');
     document.querySelector('#historyDetails').classList.add('hidden');
